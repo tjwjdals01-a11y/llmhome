@@ -1,0 +1,378 @@
+/* 기본 리셋 및 폰트 설정 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #e5e2d6;       /* 레퍼런스 특유의 차분하고 은은한 베이지 리넨 톤 */
+    --text-color: #2e2b25;     /* 정갈하고 묵직한 세피아 블랙/차콜 */
+    --sub-color: #706b5e;      /* 부드럽고 가독성 높은 뮤트 브라운 그레이 */
+    --border-color: #d2cebf;   /* 경계선용 아주 연한 뉴트럴 베이지 */
+    --accent-color: #554e43;   /* 포인트용 짙은 에스프레소 타우페 */
+    --serif-font: 'Playfair Display', 'Noto Serif KR', serif;
+    --sans-font: 'DM Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+}
+
+body {
+    font-family: var(--sans-font);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    overflow-x: hidden;
+}
+
+/* =========================
+   NAVIGATION (GNB)
+========================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 6%;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    font-family: var(--serif-font);
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: -0.03em;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--sub-color);
+}
+
+/* =========================
+   HERO CONTAINER
+========================= */
+.hero {
+    width: 100%;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(15%) contrast(95%) brightness(95%);
+}
+
+.hero-title {
+    position: absolute;
+    font-family: var(--serif-font);
+    font-size: clamp(3.5rem, 8vw, 7.5rem);
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-intro {
+    max-width: 750px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.wave-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 35px;
+    height: 24px;
+}
+
+.wave-icon span {
+    display: inline-block;
+    width: 1px;
+    background-color: var(--text-color);
+    opacity: 0.7;
+}
+.wave-icon span:nth-child(1) { height: 12px; }
+.wave-icon span:nth-child(2) { height: 20px; }
+.wave-icon span:nth-child(3) { height: 8px; }
+.wave-icon span:nth-child(4) { height: 24px; }
+.wave-icon span:nth-child(5) { height: 14px; }
+
+.brand-desc {
+    font-family: var(--serif-font);
+    font-size: 18px;
+    line-height: 2.0;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+/* =========================
+   SECTION COMMON
+========================= */
+.quiz, .result {
+    padding: 100px 6% 120px;
+    border-top: 1px solid var(--border-color);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-family: var(--serif-font);
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    color: var(--sub-color);
+    letter-spacing: -0.01em;
+}
+
+/* =========================
+   QUIZ FORM
+========================= */
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.select-wrapper label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--sub-color);
+    font-weight: 500;
+}
+
+select {
+    width: 100%;
+    height: 54px;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-family: var(--sans-font);
+    font-size: 15px;
+    padding: 0 15px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: var(--accent-color);
+}
+
+.center {
+    text-align: center;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 16px 45px;
+    font-family: var(--serif-font);
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--text-color);
+}
+
+/* =========================
+   PRESCRIPTION RESULT BOX
+========================= */
+#resultBox {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.empty {
+    text-align: center;
+    color: var(--sub-color);
+    font-style: italic;
+    font-family: var(--serif-font);
+    font-size: 16px;
+    padding: 40px 0;
+}
+
+.report-content {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.report-header {
+    font-family: var(--serif-font);
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.report-section {
+    margin-bottom: 45px;
+}
+
+.report-section .section-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--sub-color);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.book-quote-block {
+    font-family: var(--serif-font);
+    font-size: 21px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 2px solid var(--accent-color);
+}
+
+.book-meta {
+    font-size: 14px;
+    color: var(--sub-color);
+    margin-top: 8px;
+    display: block;
+}
+
+.analysis-text {
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--sub-color);
+    margin-top: 15px;
+}
+
+/* [추가] 차 이미지 및 소개글 배치용 격자 레이아웃 */
+.report-tea-block {
+    display: grid;
+    grid-template-columns: 180px 1fr; /* 이미지 공간 분할 */
+    gap: 25px;
+    align-items: start;
+    margin-top: 15px;
+}
+
+/* [추가] 차 이미지 본체 스타일 */
+.tea-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    filter: sepia(20%) contrast(90%) brightness(95%); /* 전체 베이지 무드와 동기화 */
+    border: 1px solid var(--border-color);
+}
+
+.tea-name {
+    font-family: var(--serif-font);
+    font-size: 22px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.tags-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tag {
+    font-size: 12px;
+    color: var(--accent-color);
+    border: 1px solid var(--border-color);
+    padding: 4px 12px;
+    font-style: italic;
+    font-family: var(--serif-font);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    padding: 80px 0;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-logo {
+    font-family: var(--serif-font);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: var(--sub-color);
+    letter-spacing: 0.02em;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .hero-image-container { height: 50vh; }
+    .brand-desc { font-size: 16px; line-height: 1.8; }
+    .form-grid { grid-template-columns: 1fr; gap: 20px; }
+    .quiz, .result { padding: 70px 20px; }
+    /* 모바일에서는 세로로 정렬 */
+    .report-tea-block { grid-template-columns: 1fr; gap: 15px; }
+    .tea-image { height: 220px; }
+}

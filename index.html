@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowMatch. - Book & Tea Pairing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Noto+Serif+KR:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo" onclick="scrollToSection('hero')">GlowMatch.</div>
+        <div class="nav-menu">
+            <a href="#quiz" onclick="scrollToSection('quiz'); return false;">catalog</a>
+            <a href="#result" onclick="scrollToSection('result'); return false;">our story</a>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=1600" alt="calm reading space">
+            <h1 class="hero-title">GlowMatch.</h1>
+        </div>
+        
+        <div class="hero-intro">
+            <div class="wave-icon">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p class="brand-desc">
+                GlowMatch는 정제된 문장과 따뜻한 차의 의식이 만나는 큐레이션 공간입니다.<br>
+                지친 일상 속에서 잠시 속도를 늦추고, 온전한 사색과 내면의 평온을 마주하는 시간을 제안합니다.
+            </p>
+        </div>
+    </header>
+
+    <section id="quiz" class="quiz">
+        <div class="section-title">
+            <h2>PERSONAL PATHS</h2>
+            <p class="section-subtitle">현재 당신의 마음 풍경을 선택해 주세요.</p>
+        </div>
+
+        <div class="form-container">
+            <div class="form-grid">
+                <div class="select-wrapper">
+                    <label for="age">나이대</label>
+                    <select id="age">
+                        <option value="10대">10대의 터널</option>
+                        <option value="20대">불안과 호기심의 20대</option>
+                        <option value="30대">무게감을 견디는 30대</option>
+                        <option value="40대+">깊이를 더해가는 40대+</option>
+                    </select>
+                </div>
+
+                <div class="select-wrapper">
+                    <label for="emotion">마음 상태</label>
+                    <select id="emotion">
+                        <option value="1">모든 게 지친 번아웃</option>
+                        <option value="2">스치고 상처받은 마음</option>
+                        <option value="3">막연하고 흐릿한 미래</option>
+                        <option value="4">외롭고 고요한 밤</option>
+                    </select>
+                </div>
+
+                <div class="select-wrapper">
+                    <label for="comfort">원하는 문장</label>
+                    <select id="comfort">
+                        <option value="1">다정한 위로</option>
+                        <option value="2">단단한 조언</option>
+                        <option value="3">깊은 감정의 공감</option>
+                    </select>
+                </div>
+
+                <div class="select-wrapper">
+                    <label for="tea">선호하는 향</label>
+                    <select id="tea">
+                        <option value="1">싱그럽고 맑은 풀내음 계열</option>
+                        <option value="2">가라앉는 은은한 고소한 계열</option>
+                        <option value="3">부드럽고 싱그러운 달콤한 계열</option>
+                        <option value="4">개운하고 깊은 이국적인 향 계열</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="center">
+                <button class="recommend-btn" onclick="recommend()">Explore Curation</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="result" class="result">
+        <div class="section-title">
+            <h2>PRESCRIPTION</h2>
+        </div>
+
+        <div id="resultBox">
+            <p class="empty">마음 프로필을 작성하시면 이곳에 조용한 처방전이 도착합니다.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">GlowMatch.</div>
+        <p class="copyright">© 2026 GlowMatch. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
