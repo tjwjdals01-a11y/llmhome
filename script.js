@@ -171,7 +171,7 @@ function recommend() {
             },
             {
                 name: '소백산 수제 황금 국화차',
-                image: 'https://images.unsplash.com/photo-1605365518177-3e6cf1e4a3df?w=600',
+                image: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=600',
                 context: '말린 국화꽃 한 송이가 잔 속에서 황금빛으로 화사하게 피어납니다. 은은하고 맑은 향기가 정체되어 있던 눈과 머리를 투명하게 씻겨냅니다.',
                 tag: '#화사한꽃향'
             }
