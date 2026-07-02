@@ -117,19 +117,19 @@ function recommend() {
         teaPool = [
             {
                 name: '하동 야생 세작 어린 녹차',
-                image: 'https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=600',
+                image: 'image/녹차.jpg',
                 context: '자극 없이 맑고 가벼운 풀향이 특징입니다. 뜨거운 물 안에서 여리게 피어나는 초록빛 온기가 복잡하게 얼룩진 마음의 노이즈를 정갈하게 정돈해 줍니다.',
                 tag: '#싱그러움'
             },
             {
                 name: '백호은침 명품 백차 (White Tea)',
-                image: 'https://images.unsplash.com/photo-1563822249548-9a72b6353cd1?w=600',
+                image: 'image/백차.jpg',
                 context: '어린 찻잎의 흰 솜털을 그대로 살려 우려낸 귀한 백차입니다. 마치 새벽 안개 속을 걷는 듯 투명하고 깊은 평정심을 선물합니다.',
                 tag: '#맑고투명함'
             },
             {
                 name: '교토 전통 맷돌 유기농 우지 말차',
-                image: 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=600',
+                image: 'image/말차.jpg',
                 context: '진한 초록의 활력을 담아 쌉싸름하면서도 입안 가득 묵직한 감칠맛을 남깁니다. 마음속의 소란스러운 잡념들을 강하게 내리눌러 지워줍니다.',
                 tag: '#진한감칠맛'
             }
@@ -138,19 +138,19 @@ function recommend() {
         teaPool = [
             {
                 name: '유기농 제주 보리 덖음 우롱차',
-                image: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600',
+                image: 'image/우롱차.jpg',
                 context: '구수하고 묵직한 구운 곡물의 잔향이 오랜 여운을 남깁니다. 한 모금 삼킬 때마다 마음 한구석의 서늘함을 채우고 기둥처럼 중심을 잡아줍니다.',
                 tag: '#구수함'
             },
             {
                 name: '전통 가마솥 덖음 황차',
-                image: 'https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=600',
+                image: 'image/황차.jpg',
                 context: '적절한 숙성을 거쳐 투박하면서도 은은한 단맛과 깊은 흙내음이 감도는 전통차입니다. 가라앉은 마음을 포근하고 단단하게 채워줍니다.',
                 tag: '#은은한깊이'
             },
             {
                 name: '엄선된 고소한 발아 메밀차',
-                image: 'https://images.unsplash.com/photo-1501199550413-4dc975bc6183?w=600',
+                image: 'image/메밀차.jpg',
                 context: '카페인이 전혀 없어 깊은 밤 가라앉은 감정선에도 아무런 자극을 주지 않습니다. 웅크린 몸과 마음에 부드럽고 든든한 온기를 줍니다.',
                 tag: '#차분한고소함'
             }
@@ -159,19 +159,19 @@ function recommend() {
         teaPool = [
             {
                 name: '천연 야생 로즈힙 오가닉 피치 티',
-                image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600',
+                image: 'image/피치차.jpg',
                 context: '인위적인 달콤함을 배제하고 복숭아 과육과 장미 꽃잎 본연의 싱그러운 향만을 살려, 어두워진 마음 구석구석에 기분 좋은 생기를 채웁니다.',
                 tag: '#향긋달콤'
             },
             {
                 name: '실론 얼그레이 스윗 밀크티 라떼',
-                image: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600',
+                image: 'image/밀크티.jpg',
                 context: '시트러스한 베르가모트 향을 머금은 찻잎 위로 촘촘하고 부드러운 스팀 우유를 얹어내어, 차가워진 내면을 가만히 감싸 쥐어 줍니다.',
                 tag: '#포근한단맛'
             },
             {
                 name: '소백산 수제 황금 국화차',
-                image: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=600',
+                image: 'image/국화차.jpg',
                 context: '말린 국화꽃 한 송이가 잔 속에서 황금빛으로 화사하게 피어납니다. 은은하고 맑은 향기가 정체되어 있던 눈과 머리를 투명하게 씻겨냅니다.',
                 tag: '#화사한꽃향'
             }
@@ -180,19 +180,19 @@ function recommend() {
         teaPool = [
             {
                 name: '시나몬 카다멈 루이보스 블렌드',
-                image: 'https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=600',
+                image: 'image/루이보스.jpg',
                 context: '알싸하고 이국적인 허브 스파이스가 막혀있던 호흡을 부드럽게 터주어, 내면에 뭉쳐있던 스트레스를 개운하게 날려 보내 줍니다.',
                 tag: '#이국적허브'
             },
             {
                 name: '모로칸 페퍼민트 리프 티',
-                image: 'https://images.unsplash.com/photo-1556881286-fc6915169721?w=600',
+                image: 'image/페퍼민트.jpg',
                 context: '입안을 가득 채우는 서늘하고 청량한 민트 향이 무력해진 감정에 즉각적인 환기감을 주며 가슴 깊은 곳까지 맑은 해방감을 줍니다.',
                 tag: '#상쾌한쿨링'
             },
             {
                 name: '오가닉 진저 캐모마일 인퓨전',
-                image: 'https://images.unsplash.com/photo-1522012147041-30a115493b2c?w=600',
+                image: 'image/캐모마일.jpg',
                 context: '생강의 알싸한 온기와 캐모마일 특유의 편안한 달콤함이 만나 경직되어 있던 신경을 무장해제 시키고 깊은 릴랙싱을 유도합니다.',
                 tag: '#긴장완화'
             }
