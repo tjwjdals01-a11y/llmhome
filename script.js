@@ -159,7 +159,7 @@ function recommend() {
         teaPool = [
             {
                 name: '천연 야생 로즈힙 오가닉 피치 티',
-                image: 'image/피치차.jpg',
+                image: 'image/피치티.jpg',
                 context: '인위적인 달콤함을 배제하고 복숭아 과육과 장미 꽃잎 본연의 싱그러운 향만을 살려, 어두워진 마음 구석구석에 기분 좋은 생기를 채웁니다.',
                 tag: '#향긋달콤'
             },
